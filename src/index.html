@@ -11,7 +11,7 @@
 <body class="container-fluid">
   <div class="jumbo2 jumbotron jumbotron-billboard">
     <div class="img">
-      <img class="img-responsive" src=<%=('./images/tech-town-showcase-students.JPG') %> alt="students meeting with tech business owner"/>
+      <img class="img-responsive" src=<%= require('./images/tech-town-showcase-students.JPG') %> alt="students meeting with tech business owner"/>
     </div><!-- <div class="img"></div> -->
   <a name="home"></a>
     <div class="container">
@@ -23,13 +23,15 @@
   <br/>
   <div class="container">
     <div class="row">
-      <div class="col col-offset-2 col-md-7">
+      <div class="col col-md-12">
         <article>
           <p>Sponsored by:</p>
-          <img src="./images/madison-county-economic-development-logo.jpg" alt="Madison County Economic Development Logo">
+          <img id="mced-logo" src=<%= require("./images/madison-county-economic-development-logo.jpg") %> alt="Madison County Economic Development Logo">
         </article>
+        <br/>
+        <br/>
       <div>
-        <img src="./images/tech-town-showcase-flyer.jpg" alt="Tech Town Showcase Flyer" />
+        <img id="tts-flyer" src=<%= require("./images/tech-town-showcase-flyer.jpg")%> alt="Tech Town Showcase Flyer" />
         </div>
       </div>
       <!-- <div class="col-md-3 col-md-offset-1">
@@ -80,9 +82,9 @@
         </div>
       <div class="col-md-7 col-md-offset-1">
         <article>
-          <p>Presentations can range from geographic, cultural, political, etc. to facts about the country.  Participants can recite a poem, tell a folk tale, present a skit, create an interactive game, sing or dance or ellicit audience participation, or anything else the students would like to share; the more creative, the better.  Group presentations are welcome.  We often get to hear from a guest speaker who lived or travelled extensively in the country we are studying.</p>
+          <p>Madison High School and the Madison County Economic development board can use your help!  We are looking for local tech businesses to set up tables at the event and engage WNCs next generation of tech workers.  We need people in the community to demonstrate that “coding” doesn’t just mean doing medical paperwork and that there is work in tech that doesn’t involve fixing computers.</p>
           <br/>
-          <p>Presentations are for home schoolers ages 7 and above. Younger siblings are welcome to watch the presentatipons or participate in an older siblings presentation.</p>
+          <p>The Madison County Economic Development Board is sponsoring an event on November 30th called Madison Tech Town Support.  Madison Tech Town Support aims to expose Madison County juniors and seniors to the many types of tech careers available.  This event is born out of Madison County being designated as a Tech Hire community; an initiative started by President Barack Obama to help train people in rural and underserved communities for careers in the tech sector.  MTTS is styled like a career fair and students travel from vendor to vendor learning about what the company does and what type of tech professionals they employee.</p>
         </article>
       </div>
     </div>
@@ -100,9 +102,7 @@
     <div class="row">
       <div class="col-md-7">
         <article><a name="about"></a>
-          <p>The Asheville Homeschool Culture Club is open to any family. Space is limited and enrollment in the club is contigent upon approval and payment of annual dues. If we reach capacity for our current facilities, we will gladly put you on a wait list.</p>
-          <br/>
-          <p>The annual dues for AshHCC are only $18 per child and cover costs of our facility rental and supplies. In addition to dues, parents assist with set up, clean up and contributing to the pot luck. Families bring authentic food from the country of study to share. Please be sure to bring sufficient quantity of your dish so that everyone may get a helping.</p>
+
         </article>
       </div>
     </div>
@@ -149,7 +149,7 @@
   </nav>
 </div>
 <!-- added slash in front of app.bundle.js on 11/10 trying to fix broken images.  didn't have it there before and was working in webpack 101.  the slash hasn't made a change either way that I can see -->
-<script type="text/javascript" src="/app.bundle.js"></script>
+<script type="text/javascript" src="app.bundle.js"></script>
 </body>
 
 </html>
