@@ -89,6 +89,11 @@ module.exports = {
             disable: !isProd,
             allChunks: true
         }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        }),
         // this allows changes to update w out reloading the whole page which saves time checking your changes to code.  for development only.
         new webpack.HotModuleReplacementPlugin(),
         // This plugin will cause the relative path of the module to be displayed when HMR is enabled. Suggested for use in development.
