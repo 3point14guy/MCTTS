@@ -38,9 +38,9 @@ module.exports = {
               use: [
                   // instead of a hash for the file name in the dist folder, this will use the existing file name and extension type from the src folder.  the output path tells where in the dist folder to put these images.
                   // if the output path and public path point ot the same place as it does below:
-                  // 'file-loader?name=[name].[ext]&outputPath=images/&publicPath=images/'
+                  // 'file-loader?name=[name].[ext]&outputPath=images/&publicPath=images/',
                   //then you can use this instead:
-                  'file-loader?name=images/[name].[ext]',
+                  'file-loader?name=dist/images/[name].[ext]',
                   // optimizes images
                   'image-webpack-loader'
                 ]
@@ -70,7 +70,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Project Demo',
+            title: 'Tech Town Showcase',
             // hash: true,  this will add a special id to the files built by webpack in the dist folder and a new hash generates each time your run
             excludeChunks: ['contact'],
             filename: 'index.html',
@@ -88,6 +88,11 @@ module.exports = {
             filename: 'css/[name].css',
             disable: !isProd,
             allChunks: true
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
         }),
         // this allows changes to update w out reloading the whole page which saves time checking your changes to code.  for development only.
         new webpack.HotModuleReplacementPlugin(),
