@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/3point14guy/webpack/issues"
   },
-  "homepage": "https://github.com/3point14guy/webpack#readme",
+  "homepage": "https://github.com/3point14guy/webpack#index",
   "devDependencies": {
     "bootstrap-loader": "^2.2.0",
     "bootstrap-sass": "^3.3.7",
