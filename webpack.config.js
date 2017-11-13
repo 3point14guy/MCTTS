@@ -40,7 +40,7 @@ module.exports = {
                   // if the output path and public path point ot the same place as it does below:
                   // 'file-loader?name=[name].[ext]&outputPath=images/&publicPath=images/',
                   //then you can use this instead:
-                  'file-loader?name=dist/images/[name].[ext]',
+                  'file-loader?name=images/[name].[ext]',
                   // optimizes images
                   'image-webpack-loader'
                 ]

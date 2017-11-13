@@ -30,10 +30,13 @@ body {
 }
 
 #mced-logo {
-  // float: inline;
   margin-right: 20px;
   height: 120px;
   width: 310px;
+}
+
+#mcs-logo {
+  float: inline;
 }
 
 .logo-container {
@@ -70,9 +73,6 @@ body {
   width: 270px;
 }
 
-#mcs-logo {
-  float: inline;
-}
 #tts-flyer {
   height: 900px;
   width: 575px;
@@ -99,17 +99,20 @@ body {
   text-align: center;
 }
 
-.sponsers {
+.sponsors {
     background-color: $darkslategray;
+    height: 200px;
+    width: auto;
 }
 
 .bg {
-  background: url('./images/tech-town-showcase-students.JPG') no-repeat center center;
+  background-color: $darkslategray;
+  background: url('./images/tech-town-showcase-students.JPG') no-repeat right;
   position: fixed;
   width: 100%;
   height: 350px; /*same height as jumbotron */
-  top:0;
-  left:0;
+  margin-left: -20px;
+  margin-top: 20px;
   z-index: -1;
 }
 
