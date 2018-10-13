@@ -25,10 +25,10 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.30.1",
-    "image-webpack-loader": "^3.4.2",
+    "image-webpack-loader": "^4.3.1",
     "imports-loader": "^0.7.1",
     "jquery": "^3.2.1",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.9.3",
     "purify-css": "^1.2.5",
     "purifycss-webpack": "^0.7.0",
     "resolve-url-loader": "^2.2.0",
@@ -37,7 +37,7 @@
     "style-loader": "^0.18.2",
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.3"
+    "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
     "glob-all": "^3.1.0",
